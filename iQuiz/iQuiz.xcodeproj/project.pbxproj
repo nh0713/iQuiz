@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		06692773218912C10034D2C6 /* footballplayer.png in Resources */ = {isa = PBXBuildFile; fileRef = 06692772218912C00034D2C6 /* footballplayer.png */; };
+		06B4F71A218913B0008378E4 /* console.png in Resources */ = {isa = PBXBuildFile; fileRef = 06B4F718218913B0008378E4 /* console.png */; };
+		06B4F71B218913B0008378E4 /* sedan-car-front.png in Resources */ = {isa = PBXBuildFile; fileRef = 06B4F719218913B0008378E4 /* sedan-car-front.png */; };
 		06C5EDA62186776000ABC53A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C5EDA52186776000ABC53A /* AppDelegate.swift */; };
 		06C5EDA82186776000ABC53A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C5EDA72186776000ABC53A /* ViewController.swift */; };
 		06C5EDAB2186776000ABC53A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06C5EDA92186776000ABC53A /* Main.storyboard */; };
@@ -15,9 +18,6 @@
 		06C5EDBB2186776200ABC53A /* iQuizTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C5EDBA2186776200ABC53A /* iQuizTests.swift */; };
 		06C5EDC62186776200ABC53A /* iQuizUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C5EDC52186776200ABC53A /* iQuizUITests.swift */; };
 		06C5EDD62188F2B500ABC53A /* SubjectCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C5EDD52188F2B500ABC53A /* SubjectCell.swift */; };
-		06C5EDD82188F9F900ABC53A /* sedan-car-front.png in Resources */ = {isa = PBXBuildFile; fileRef = 06C5EDD72188F9F900ABC53A /* sedan-car-front.png */; };
-		06C5EDDC21890BBB00ABC53A /* console.png in Resources */ = {isa = PBXBuildFile; fileRef = 06C5EDDB21890BBA00ABC53A /* console.png */; };
-		06C5EDDE21890DA700ABC53A /* footballplayer.png in Resources */ = {isa = PBXBuildFile; fileRef = 06C5EDDD21890DA700ABC53A /* footballplayer.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +38,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		06692772218912C00034D2C6 /* footballplayer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = footballplayer.png; path = ../../../../../Downloads/footballplayer.png; sourceTree = "<group>"; };
+		06B4F718218913B0008378E4 /* console.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = console.png; path = ../../../../../Downloads/console.png; sourceTree = "<group>"; };
+		06B4F719218913B0008378E4 /* sedan-car-front.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "sedan-car-front.png"; path = "../../../../../Downloads/sedan-car-front.png"; sourceTree = "<group>"; };
+		06B4F71C21891493008378E4 /* console.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = console.png; sourceTree = "<group>"; };
+		06B4F71D21891493008378E4 /* sedan-car-front.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sedan-car-front.png"; sourceTree = "<group>"; };
+		06B4F71E21891494008378E4 /* footballplayer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = footballplayer.png; sourceTree = "<group>"; };
 		06C5EDA22186776000ABC53A /* iQuiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iQuiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		06C5EDA52186776000ABC53A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		06C5EDA72186776000ABC53A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -52,9 +58,6 @@
 		06C5EDC52186776200ABC53A /* iQuizUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iQuizUITests.swift; sourceTree = "<group>"; };
 		06C5EDC72186776200ABC53A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		06C5EDD52188F2B500ABC53A /* SubjectCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectCell.swift; sourceTree = "<group>"; };
-		06C5EDD72188F9F900ABC53A /* sedan-car-front.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "sedan-car-front.png"; path = "../../../../../Downloads/sedan-car-front.png"; sourceTree = "<group>"; };
-		06C5EDDB21890BBA00ABC53A /* console.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = console.png; path = ../../../../../Downloads/console.png; sourceTree = "<group>"; };
-		06C5EDDD21890DA700ABC53A /* footballplayer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = footballplayer.png; path = ../../../../../Downloads/footballplayer.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +92,9 @@
 				06C5EDB92186776200ABC53A /* iQuizTests */,
 				06C5EDC42186776200ABC53A /* iQuizUITests */,
 				06C5EDA32186776000ABC53A /* Products */,
+				06B4F71C21891493008378E4 /* console.png */,
+				06B4F71D21891493008378E4 /* sedan-car-front.png */,
+				06B4F71E21891494008378E4 /* footballplayer.png */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,9 +111,9 @@
 		06C5EDA42186776000ABC53A /* iQuiz */ = {
 			isa = PBXGroup;
 			children = (
-				06C5EDDD21890DA700ABC53A /* footballplayer.png */,
-				06C5EDDB21890BBA00ABC53A /* console.png */,
-				06C5EDD72188F9F900ABC53A /* sedan-car-front.png */,
+				06B4F718218913B0008378E4 /* console.png */,
+				06B4F719218913B0008378E4 /* sedan-car-front.png */,
+				06692772218912C00034D2C6 /* footballplayer.png */,
 				06C5EDA52186776000ABC53A /* AppDelegate.swift */,
 				06C5EDA72186776000ABC53A /* ViewController.swift */,
 				06C5EDA92186776000ABC53A /* Main.storyboard */,
@@ -242,10 +248,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				06C5EDB02186776200ABC53A /* LaunchScreen.storyboard in Resources */,
-				06C5EDDE21890DA700ABC53A /* footballplayer.png in Resources */,
 				06C5EDAD2186776200ABC53A /* Assets.xcassets in Resources */,
-				06C5EDD82188F9F900ABC53A /* sedan-car-front.png in Resources */,
-				06C5EDDC21890BBB00ABC53A /* console.png in Resources */,
+				06B4F71A218913B0008378E4 /* console.png in Resources */,
+				06692773218912C10034D2C6 /* footballplayer.png in Resources */,
+				06B4F71B218913B0008378E4 /* sedan-car-front.png in Resources */,
 				06C5EDAB2186776000ABC53A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
