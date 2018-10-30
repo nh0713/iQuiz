@@ -28,20 +28,20 @@
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="77.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sedan-car-front.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ewd-Qu-k0D">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="console.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ewd-Qu-k0D">
                                                     <rect key="frame" x="15" y="10" width="50" height="57.5"/>
                                                 </imageView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="8dc-0e-eSc">
-                                                    <rect key="frame" x="75" y="21" width="380" height="36"/>
+                                                    <rect key="frame" x="75" y="21" width="220" height="36"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eSs-UC-kb9">
-                                                            <rect key="frame" x="0.0" y="0.0" width="380" height="15.5"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="220" height="15.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rxF-ux-Tkd">
-                                                            <rect key="frame" x="0.0" y="15.5" width="380" height="20.5"/>
+                                                            <rect key="frame" x="0.0" y="15.5" width="220" height="20.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -73,7 +73,7 @@
                                 </connections>
                             </tableView>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qTW-Yz-TPd">
-                                <rect key="frame" x="0.0" y="180" width="160" height="44"/>
+                                <rect key="frame" x="0.0" y="20" width="320" height="44"/>
                                 <items>
                                     <barButtonItem title="Settings" id="0BH-4w-LO0">
                                         <connections>
@@ -107,6 +107,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="sedan-car-front.png" width="32" height="32"/>
+        <image name="console.png" width="32" height="32"/>
     </resources>
 </document>
