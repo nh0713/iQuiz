@@ -20,6 +20,8 @@ class QuestionViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
         showQuestion()
         // Do any additional setup after loading the view.
     }
@@ -27,29 +29,29 @@ class QuestionViewController: UIViewController {
     func showQuestion() {
         switch appData.subjectIdx {
         case 0:
-            appData.subjectAnswers = appData.carsAnswers
-            appData.currentQuestion = appData.carsQuestions[appData.questionIndex]
-            lblQuestion.text = appData.carsQuestions[appData.questionIndex]
-            btnAnswer1.setTitle(appData.carsAnswers[appData.questionIndex + (appData.questionIndex * 4)], for: .normal)
-            btnAnswer2.setTitle(appData.carsAnswers[appData.questionIndex + 1 + (appData.questionIndex * 4)], for: .normal)
-            btnAnswer3.setTitle(appData.carsAnswers[appData.questionIndex + 2 + (appData.questionIndex * 4)], for: .normal)
-            btnAnswer4.setTitle(appData.carsAnswers[appData.questionIndex + 3 + (appData.questionIndex * 4)], for: .normal)
+            appData.subjectAnswers = appData.allData[0].questions![appData.questionIndex].answers!
+            appData.currentQuestion = appData.allData[0].questions![appData.questionIndex].text!
+            lblQuestion.text = appData.allData[0].questions![appData.questionIndex].text!
+            btnAnswer1.setTitle(appData.allData[0].questions![appData.questionIndex].answers![0], for: .normal)
+            btnAnswer2.setTitle(appData.allData[0].questions![appData.questionIndex].answers![1], for: .normal)
+            btnAnswer3.setTitle(appData.allData[0].questions![appData.questionIndex].answers![2], for: .normal)
+            btnAnswer4.setTitle(appData.allData[0].questions![appData.questionIndex].answers![3], for: .normal)
         case 1:
-            appData.subjectAnswers = appData.footballAnswers
-            appData.currentQuestion = appData.footballQuestions[appData.questionIndex]
-            lblQuestion.text = appData.footballQuestions[appData.questionIndex]
-            btnAnswer1.setTitle(appData.footballAnswers[appData.questionIndex + (appData.questionIndex * 4)], for: .normal)
-            btnAnswer2.setTitle(appData.footballAnswers[appData.questionIndex + 1 + (appData.questionIndex * 4)], for: .normal)
-            btnAnswer3.setTitle(appData.footballAnswers[appData.questionIndex + 2 + (appData.questionIndex * 4)], for: .normal)
-            btnAnswer4.setTitle(appData.footballAnswers[appData.questionIndex + 3 + (appData.questionIndex * 4)], for: .normal)
+            appData.subjectAnswers = appData.allData[1].questions![appData.questionIndex].answers!
+            appData.currentQuestion = appData.allData[1].questions![appData.questionIndex].text!
+            lblQuestion.text = appData.allData[1].questions![appData.questionIndex].text!
+            btnAnswer1.setTitle(appData.allData[1].questions![appData.questionIndex].answers![0], for: .normal)
+            btnAnswer2.setTitle(appData.allData[1].questions![appData.questionIndex].answers![1], for: .normal)
+            btnAnswer3.setTitle(appData.allData[1].questions![appData.questionIndex].answers![2], for: .normal)
+            btnAnswer4.setTitle(appData.allData[1].questions![appData.questionIndex].answers![3], for: .normal)
         case 2:
-            appData.subjectAnswers = appData.vgAnswers
-            appData.currentQuestion = appData.vgQuestions[appData.questionIndex]
-            lblQuestion.text = appData.vgQuestions[appData.questionIndex]
-            btnAnswer1.setTitle(appData.vgAnswers[appData.questionIndex + (appData.questionIndex * 4)], for: .normal)
-            btnAnswer2.setTitle(appData.vgAnswers[appData.questionIndex + 1 + (appData.questionIndex * 4)], for: .normal)
-            btnAnswer3.setTitle(appData.vgAnswers[appData.questionIndex + 2 + (appData.questionIndex * 4)], for: .normal)
-            btnAnswer4.setTitle(appData.vgAnswers[appData.questionIndex + 3 + (appData.questionIndex * 4)], for: .normal)
+            appData.subjectAnswers = appData.allData[2].questions![appData.questionIndex].answers!
+            appData.currentQuestion = appData.allData[2].questions![appData.questionIndex].text!
+            lblQuestion.text = appData.allData[2].questions![appData.questionIndex].text!
+            btnAnswer1.setTitle(appData.allData[2].questions![appData.questionIndex].answers![0], for: .normal)
+            btnAnswer2.setTitle(appData.allData[2].questions![appData.questionIndex].answers![1], for: .normal)
+            btnAnswer3.setTitle(appData.allData[2].questions![appData.questionIndex].answers![2], for: .normal)
+            btnAnswer4.setTitle(appData.allData[2].questions![appData.questionIndex].answers![3], for: .normal)
         default:
             lblQuestion.text = "Error"
         }

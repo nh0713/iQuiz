@@ -23,7 +23,7 @@ class AnswerViewController: UIViewController {
         super.viewDidLoad()
         showQuestion()
         
-        var labelList: [UILabel] = [self.lblAnswer1,self.lblAnswer2, self.lblAnswer3, self.lblAnswer4]
+        let labelList: [UILabel] = [self.lblAnswer1,self.lblAnswer2, self.lblAnswer3, self.lblAnswer4]
         
         showAnswers()
         checkAnswer(labelList)
@@ -37,16 +37,16 @@ class AnswerViewController: UIViewController {
     }
     
     func showAnswers() {
-        lblAnswer1.text = appData.subjectAnswers[appData.questionIndex * 5 + 0]
-        lblAnswer2.text = appData.subjectAnswers[appData.questionIndex * 5 + 1]
-        lblAnswer3.text = appData.subjectAnswers[appData.questionIndex * 5 + 2]
-        lblAnswer4.text = appData.subjectAnswers[appData.questionIndex * 5 + 3]
+        lblAnswer1.text = appData.allData[appData.subjectIdx].questions![appData.questionIndex].answers![0]
+        lblAnswer2.text = appData.allData[appData.subjectIdx].questions![appData.questionIndex].answers![1]
+        lblAnswer3.text = appData.allData[appData.subjectIdx].questions![appData.questionIndex].answers![2]
+        lblAnswer4.text = appData.allData[appData.subjectIdx].questions![appData.questionIndex].answers![3]
     }
     
     func checkAnswer(_ labelList: [UILabel]) {
         NSLog("\(appData.answer)")
-        NSLog("\(appData.subjectAnswers[appData.questionIndex * 5 +  appData.answer]) \(appData.subjectAnswers[appData.questionIndex * 5 + 4])")
-        if appData.subjectAnswers[appData.questionIndex * 5 +  appData.answer] == appData.subjectAnswers[appData.questionIndex * 5 + 4] {
+        NSLog("current: \(appData.allData[appData.subjectIdx].questions![appData.questionIndex].answer!)")
+        if String(appData.answer + 1) == appData.allData[appData.subjectIdx].questions![appData.questionIndex].answer! {
             lblCorrectIncorrect.text = "Correct"
             lblCorrectIncorrect.font = UIFont.boldSystemFont(ofSize: 25)
             lblCorrectIncorrect.textColor = UIColor.green
@@ -57,13 +57,9 @@ class AnswerViewController: UIViewController {
             lblCorrectIncorrect.font = UIFont.boldSystemFont(ofSize: 25)
             lblCorrectIncorrect.textColor = UIColor.red
             labelList[appData.answer].textColor = UIColor.red
-            var index = 0
-            NSLog("\(appData.subjectAnswers[appData.questionIndex * 5 + 4])")
-            while labelList[index].text !=  appData.subjectAnswers[appData.questionIndex * 5 + 4]{
-                index += 1
+            let index = Int(appData.allData[appData.subjectIdx].questions![appData.questionIndex].answer!)
+            labelList[index! - 1].textColor = UIColor.green
             }
-            labelList[index].textColor = UIColor.green
-        }
     }
     
     @IBAction func btnNext(_ sender: Any) {
@@ -71,7 +67,7 @@ class AnswerViewController: UIViewController {
         appData.questionIndex += 1
         NSLog("\(appData.questionIndex)")
         appData.answer = -1
-        if appData.questionIndex == 2 {
+        if appData.questionIndex == (appData.allData[appData.subjectIdx].questions?.count)! {
             performSegue(withIdentifier: "toFinished", sender: self)
         } else {
             performSegue(withIdentifier: "backToQuestion", sender: self)

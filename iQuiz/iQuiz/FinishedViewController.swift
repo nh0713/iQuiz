@@ -17,7 +17,7 @@ class FinishedViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        lblScore.text = "\(appData.correct)/\(appData.subjectAnswers.count/5)"
+        lblScore.text = "\(appData.correct)/\((appData.allData[appData.subjectIdx].questions?.count)!)"
         congratulatoryText()
         clear()
     }
@@ -32,7 +32,7 @@ class FinishedViewController: UIViewController {
     }
     
     func congratulatoryText() {
-        let total = appData.subjectAnswers.count/5
+        let total = (appData.allData[appData.subjectIdx].questions?.count)!
         if appData.correct == total - 1 {
             lblCongratulatoryText.text = "SO CLOSE"
             lblScore.textColor = UIColor.yellow
